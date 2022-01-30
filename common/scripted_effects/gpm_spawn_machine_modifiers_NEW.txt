@@ -79,13 +79,13 @@ gpm_spawn_machine_world_modifier = {
 			add_modifier = { days = -1 modifier = gpm_ghost_in_the_machine }
 			modifier = { factor = 0 has_modifier = gpm_ghost_in_the_machine }
 			modifier = { factor = 0 exists = owner owner = { NOT = { has_civic = civic_machine_assimilator } } }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_living_knowledge_base }
 			modifier = { factor = 0 has_modifier = gpm_living_knowledge_base }
 			modifier = { factor = 0 exists = owner owner = { NOT = { has_civic = civic_machine_assimilator } } }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_framework }
@@ -102,74 +102,74 @@ gpm_spawn_machine_world_modifier = {
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_rogue_programming }
 			modifier = { factor = 0 has_modifier = gpm_rogue_programming }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_hollow_planet }
 			modifier = { factor = 0 has_modifier = gpm_hollow_planet }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_true_randomness_unit }
 			modifier = { factor = 0 has_modifier = gpm_true_randomness_unit }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_nanite_infrastructure }
 			modifier = { factor = 0 has_modifier = gpm_nanite_infrastructure }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_planetary_databases }
 			modifier = { factor = 0 has_modifier = gpm_planetary_databases }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_artificial_atmosphere }
 			modifier = { factor = 0 has_modifier = gpm_artificial_atmosphere }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_space_elevators_machine }
 			modifier = { factor = 0 has_modifier = gpm_space_elevators_machine }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_quantum_information_network }
 			modifier = { factor = 0 has_modifier = gpm_quantum_information_network }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_planetwide_printing }
 			modifier = { factor = 0 has_modifier = gpm_planetwide_printing }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_liquid_cooling }
 			modifier = { factor = 0 has_modifier = gpm_liquid_cooling }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_robotic_pests }
 			modifier = { factor = 0 has_modifier = gpm_robotic_pests }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_crystal_farms }
 			modifier = { factor = 0 has_modifier = gpm_crystal_farms }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_smooth_architecture }
 			modifier = { factor = 0 has_modifier = gpm_smooth_architecture }
 			modifier = { factor = 0 has_modifier = gpm_sharp_architecture }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 		100 = {
 			add_modifier = { days = -1 modifier = gpm_sharp_architecture }
 			modifier = { factor = 0 has_modifier = gpm_sharp_architecture }
 			modifier = { factor = 0 has_modifier = gpm_smooth_architecture }
-			modifier = { factor = 0 NOT = { gpm_is_planet_class_machine = yes } }
+			modifier = { factor = 0 gpm_is_planet_class_machine = no }
 		}
 	}
 }

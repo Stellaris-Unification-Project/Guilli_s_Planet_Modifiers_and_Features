@@ -226,7 +226,7 @@ gpm_spawn_precursor_modifier = {
 			add_modifier = { days = -1 modifier = "gpm_precursor_planetary_shield" multiplier = gpm_planet_size_multiplier_precursor }
 			gpm_set_precursor_planetary_shields = yes	
 			# if = {
-				# limit = { NOT = {	is_capital =  yes } }
+				# limit = { is_capital = no }
 				# random_list = {
 					# # Standard random planet
 					# 10 = { 
@@ -551,7 +551,7 @@ gpm_spawn_precursor_modifier = {
 			add_modifier = { days = -1 modifier = "gpm_precursor_ruins" }
 			modifier = { factor = @rare }
 			# On these planets #
-			modifier = { factor = 0 NOT = { gpm_is_planet_dry_hot = yes } }
+			modifier = { factor = 0 gpm_is_planet_dry_hot = no }
 			# TWeaks #
 			modifier = { factor = 0 NOT = { planet_size < 15 } }
 			modifier = { factor = 0.5

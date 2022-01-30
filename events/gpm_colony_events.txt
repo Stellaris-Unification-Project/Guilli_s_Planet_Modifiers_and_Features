@@ -13,15 +13,13 @@ planet_event = { id = gpm_colony.1 hide_window = yes is_triggered_only = yes
 			owner = {
 				is_ai = yes
 				# new 21/04/2018 -guilli
-				NOT = {
-                    OR = {
+				NOR = {
                         is_country_type = swarm
                         is_country_type = extradimensional
                         is_country_type = extradimensional_2
                         is_country_type = extradimensional_3
                         is_country_type = ai_empire
-                    }
-                }
+}
 			}
 		}
 	}
@@ -2672,12 +2670,10 @@ planet_event = {
 	trigger = {
 		
 		owner = {
-			NOT = {
-				OR = {
+			NOR = {
 					has_ethic = ethic_fanatic_spiritualist
 					has_ethic = ethic_spiritualist
-				}
-			}
+}
 		}
 		num_pops > 0
 		
@@ -2717,7 +2713,7 @@ planet_event = {
 				}
 			}
 			create_pop = {
-				species = last_created
+				species = last_created_species
 			}					
 		}
 	}
@@ -2737,7 +2733,7 @@ planet_event = {
 				}
 			}
 			create_pop = {
-				species = last_created
+				species = last_created_species
 			}					
 		}
 	}
@@ -2757,7 +2753,7 @@ planet_event = {
 				}
 			}
 			create_pop = {
-				species = last_created
+				species = last_created_species
 			}					
 		}
 	}
@@ -3076,104 +3072,104 @@ planet_event = {
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 		create_army = {
 			name = "Cultist Rebels"
-			owner = last_created
-			species = last_created
+			owner = last_created_country
+			species = last_created_species
 			type = "rebel_army"
 		}
 	}

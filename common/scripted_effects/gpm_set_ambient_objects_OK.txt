@@ -11,8 +11,8 @@ gpm_set_shipyards_objects = {
 					gpm_is_planet_class_ringworld = yes
 					gpm_is_planet_class_habitat = yes
 					is_star = yes
+					has_planet_flag = gpm_precursor_shipyards_ambient
 				}
-				NOT = { has_planet_flag = gpm_precursor_shipyards_ambient }
 			}
 			save_event_target_as = gpm_orbit_shipyards
 			
@@ -510,8 +510,8 @@ gpm_set_shipyards_objects = {
 					gpm_is_planet_class_ringworld = yes
 					gpm_is_planet_class_habitat = yes
 					is_star = yes
+					has_planet_flag = gpm_precursor_shipyards_ambient
 				}
-				NOT = { has_planet_flag = gpm_precursor_shipyards_ambient }
 			}
 			save_event_target_as = gpm_orbit_shipyards
 			
@@ -2111,8 +2111,8 @@ gpm_set_fallen_empire_planetary_shields = {
 				NOR = {
 					gpm_is_planet_class_ringworld = yes
 					gpm_is_planet_class_habitat = yes
+					has_planet_flag = gpm_fallen_empire_shield_ambient
 				}
-				NOT = { has_planet_flag = gpm_fallen_empire_shield_ambient }
 			}
 			save_event_target_as = gpm_FE_shield_location
 			
@@ -2625,8 +2625,8 @@ gpm_set_fallen_empire_planetary_shields = {
 				NOR = {
 					gpm_is_planet_class_ringworld = yes
 					gpm_is_planet_class_habitat = yes
+					has_planet_flag = gpm_fallen_empire_shield_ambient
 				}
-				NOT = { has_planet_flag = gpm_fallen_empire_shield_ambient }
 			}
 			save_event_target_as = gpm_FE_shield_location
 			

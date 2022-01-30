@@ -117,7 +117,7 @@ country_event = {
 						gpm_is_planet_primitive = no
 					} 
 					is_planet_class = pc_desert
-					NOT = { gpm_is_planet_fallen_empire = yes }
+					gpm_is_planet_fallen_empire = no
 					NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 				}
 				# Planet Modifier Scaling
@@ -136,7 +136,7 @@ country_event = {
 						gpm_is_planet_primitive = no
 					} 
 					is_planet_class = pc_arid
-					NOT = { gpm_is_planet_fallen_empire = yes }
+					gpm_is_planet_fallen_empire = no
 					NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 				}
 				# Planet Modifier Scaling
@@ -155,7 +155,7 @@ country_event = {
 						gpm_is_planet_primitive = no
 					} 
 					is_planet_class = pc_savannah
-					NOT = { gpm_is_planet_fallen_empire = yes }
+					gpm_is_planet_fallen_empire = no
 					NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 				}
 				# Planet Modifier Scaling
@@ -174,7 +174,7 @@ country_event = {
 						gpm_is_planet_primitive = no
 					} 
 					is_planet_class = pc_tropical
-					NOT = { gpm_is_planet_fallen_empire = yes }
+					gpm_is_planet_fallen_empire = no
 					NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 				}
 				# Planet Modifier Scaling
@@ -193,7 +193,7 @@ country_event = {
 						gpm_is_planet_primitive = no
 					} 
 					is_planet_class = pc_continental
-					NOT = { gpm_is_planet_fallen_empire = yes }
+					gpm_is_planet_fallen_empire = no
 					NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 				}
 				# Planet Modifier Scaling
@@ -212,7 +212,7 @@ country_event = {
 						gpm_is_planet_primitive = no
 					} 
 					is_planet_class = pc_ocean
-					NOT = { gpm_is_planet_fallen_empire = yes }
+					gpm_is_planet_fallen_empire = no
 					NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 				}
 				# Planet Modifier Scaling
@@ -231,7 +231,7 @@ country_event = {
 						gpm_is_planet_primitive = no
 					} 
 					is_planet_class = pc_arctic
-					NOT = { gpm_is_planet_fallen_empire = yes }
+					gpm_is_planet_fallen_empire = no
 					NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 				}
 				# Planet Modifier Scaling
@@ -250,7 +250,7 @@ country_event = {
 						gpm_is_planet_primitive = no
 					} 
 					is_planet_class = pc_alpine
-					NOT = { gpm_is_planet_fallen_empire = yes }
+					gpm_is_planet_fallen_empire = no
 					NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 				}
 				# Planet Modifier Scaling
@@ -269,7 +269,7 @@ country_event = {
 						gpm_is_planet_primitive = no
 					} 
 					is_planet_class = pc_tundra
-					NOT = { gpm_is_planet_fallen_empire = yes }
+					gpm_is_planet_fallen_empire = no
 					NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 				}
 				# Planet Modifier Scaling
@@ -288,7 +288,7 @@ country_event = {
 						gpm_is_planet_primitive = no
 					} 
 					is_planet_class = pc_gaia
-					NOT = { gpm_is_planet_fallen_empire = yes }
+					gpm_is_planet_fallen_empire = no
 					NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 				}
 				# Planet Modifier Scaling
@@ -307,7 +307,7 @@ country_event = {
 						gpm_is_planet_primitive = no
 					} 
 					is_planet_class = pc_nuked
-					NOT = { gpm_is_planet_fallen_empire = yes }
+					gpm_is_planet_fallen_empire = no
 					NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 				}
 				# Planet Modifier Scaling
@@ -325,9 +325,9 @@ country_event = {
 				count = 4
 				random_galaxy_planet = {
 					limit = { 
-						NOT = { gpm_is_a_wondrous_world = yes }
+						gpm_is_a_wondrous_world = no
 						gpm_is_planet_class_normal_habitable = yes
-						NOT = { gpm_is_planet_fallen_empire = yes }
+						gpm_is_planet_fallen_empire = no
 						NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 						NAND = {
 							is_capital = yes
@@ -383,7 +383,7 @@ planet_event = {
 			gpm_is_planet_class_city = yes
 			gpm_is_planet_primitive = yes		
 		}
-		NOT = { gpm_is_planet_class_molten = yes}
+		gpm_is_planet_class_molten = no
 		NOT = { has_planet_flag = gpm_is_primitive_relic_world }
 		NOT = { has_planet_flag = forbid_guillis_planet_modifiers }
 		NOT = { has_planet_flag = forbid_guillis_precursor_modifiers }
@@ -414,8 +414,8 @@ planet_event = {
 				space_owner = { is_country_type = default }
 			}
 		}
-		NOT = { gpm_is_planet_fallen_empire = yes }
-		NOT = { gpm_is_a_wondrous_world = yes }
+		gpm_is_planet_fallen_empire = no
+		gpm_is_a_wondrous_world = no
 	}
 	
 	immediate = {
@@ -571,7 +571,7 @@ planet_event = {
 		if = {
 			limit = {
 				gpm_is_a_precursor_world = yes
-				NOT = { gpm_has_precursor_modifiers = yes }
+				gpm_has_precursor_modifiers = no
 			}
 			# Planet Modifier Scaling
 			if = {
@@ -612,31 +612,31 @@ planet_event = {
 		
 		## NUKED PLANETS 
 		if = {
-			limit = { gpm_is_planet_class_nuked = yes NOT = { gpm_is_planet_fallen_empire = yes } }
+			limit = { gpm_is_planet_class_nuked = yes gpm_is_planet_fallen_empire = no }
 			planet_event = { id = gpm_engine.50 }
 		}
 		
 		## NORMAL HABITABLE PLANETS (Colonizable standard planets)
 		if = {
-			limit = { gpm_is_planet_class_normal_habitable = yes NOT = { gpm_is_planet_fallen_empire = yes } }
+			limit = { gpm_is_planet_class_normal_habitable = yes gpm_is_planet_fallen_empire = no }
 			planet_event = { id = gpm_engine.60 }
 		}
 		
 		## CITY PLANETS 
 		if = {
-			limit = { gpm_is_planet_class_city = yes NOT = { gpm_is_planet_fallen_empire = yes } }
+			limit = { gpm_is_planet_class_city = yes gpm_is_planet_fallen_empire = no }
 			planet_event = { id = gpm_engine.70 }
 		}
 		
 		## MACHINE PLANETS 
 		if = {
-			limit = { gpm_is_planet_class_machine = yes NOT = { gpm_is_planet_fallen_empire = yes } }
+			limit = { gpm_is_planet_class_machine = yes gpm_is_planet_fallen_empire = no }
 			planet_event = { id = gpm_engine.80 }
 		}
 		
 		## HIVE PLANETS 
 		if = {
-			limit = { gpm_is_planet_class_hive = yes NOT = { gpm_is_planet_fallen_empire = yes } }
+			limit = { gpm_is_planet_class_hive = yes gpm_is_planet_fallen_empire = no }
 			planet_event = { id = gpm_engine.90 }
 		}
 		
@@ -648,14 +648,14 @@ planet_event = {
 		
 		## HABITATS 
 		if = {
-			limit = { gpm_is_planet_class_habitat = yes NOT = { gpm_is_planet_fallen_empire = yes } }
+			limit = { gpm_is_planet_class_habitat = yes gpm_is_planet_fallen_empire = no }
 			set_planet_flag = gpm_is_galaxy_generated_habitat
 			planet_event = { id = gpm_engine.110 }			
 		}
 		
 		## RINGWORLDS 
 		if = {
-			limit = { gpm_is_planet_class_ringworld = yes NOT = { gpm_is_planet_fallen_empire = yes } }
+			limit = { gpm_is_planet_class_ringworld = yes gpm_is_planet_fallen_empire = no }
 			planet_event = { id = gpm_engine.120 }			
 			set_planet_flag = gpm_is_galaxy_generated_ringworld
 		}
@@ -1059,7 +1059,7 @@ planet_event = {
 				has_global_flag = gpm_modifiers_homeworld_enabled
 			}
 		}
-		NOT = { gpm_is_planet_fallen_empire = yes }
+		gpm_is_planet_fallen_empire = no
 	}
 	
 	immediate = {

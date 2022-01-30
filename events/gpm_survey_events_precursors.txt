@@ -27,10 +27,14 @@ ship_event = {
 	trigger = {
 		FROM = {
 			gpm_has_precursor_modifiers = yes
-			NOT = { exists = archaeological_site }
-			NOT = { has_planet_flag = gpm_already_rolled_for_prec_dig_site }
-			NOT = { has_planet_flag = gpm_machine_system_moon }
-			NOT = { has_planet_flag = gpm_machine_system_machine_world }
+			NOR = {
+				exists = archaeological_site
+				has_planet_flag = gpm_already_rolled_for_prec_dig_site
+			}
+			NOR = {
+				has_planet_flag = gpm_machine_system_moon
+				has_planet_flag = gpm_machine_system_machine_world
+			}
 			NOR = {
 				gpm_is_planet_class_star = yes
 				gpm_is_planet_class_asteroid = yes

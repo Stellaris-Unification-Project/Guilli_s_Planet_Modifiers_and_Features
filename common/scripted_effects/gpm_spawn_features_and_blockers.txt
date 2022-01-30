@@ -23,7 +23,7 @@ gpm_roll_planetary_features = {
 				gpm_is_planet_class_normal_habitable = yes
 				gpm_is_planet_class_nuked = yes
 			}
-			NOT = { gpm_is_planet_fallen_empire = yes }
+			gpm_is_planet_fallen_empire = no
 		}
 		# features
 		if = {
@@ -824,7 +824,7 @@ gpm_roll_planetary_features_city = {
 	random_list = {
 		10 = {
 			add_deposit =  gpm_d_relic_tank_factory
-			modifier = { factor = 0 NOT = { has_ancrel = yes } }
+			modifier = { factor = 0 has_ancrel = no }
 			modifier = { factor = 0
 				AND = {
 					has_planet_flag = gpm_is_new_ecumenopolis
@@ -843,7 +843,7 @@ gpm_roll_planetary_features_city = {
 		}
 		10 = {
 			add_deposit =  gpm_d_relic_mech_factory
-			modifier = { factor = 0 NOT = { has_ancrel = yes } }
+			modifier = { factor = 0 has_ancrel = no }
 			modifier = { factor = 0
 				AND = {
 					has_planet_flag = gpm_is_new_ecumenopolis
@@ -862,7 +862,7 @@ gpm_roll_planetary_features_city = {
 		}
 		10 = {
 			add_deposit =  gpm_d_relic_power_armor_factory
-			modifier = { factor = 0 NOT = { has_ancrel = yes } }
+			modifier = { factor = 0 has_ancrel = no }
 			modifier = { factor = 0
 				AND = {
 					has_planet_flag = gpm_is_new_ecumenopolis
@@ -881,7 +881,7 @@ gpm_roll_planetary_features_city = {
 		}
 		10 = {
 			add_deposit =  gpm_d_relic_ship_factory
-			modifier = { factor = 0 NOT = { has_ancrel = yes } }
+			modifier = { factor = 0 has_ancrel = no }
 			modifier = { factor = 0
 				AND = {
 					has_planet_flag = gpm_is_new_ecumenopolis

@@ -149,7 +149,7 @@ gpm_spawn_gas_giant_modifier = {
 			modifier = { factor = 0 has_modifier = "gpm_floatig_behemothaurs" }
 			# Not on these planets
 			# Never in these systems
-			modifier = { factor = 0	solar_system = { any_system_planet = { is_capital = yes } } }
+			modifier = { factor = 0	solar_system = { is_capital_system = yes } }
 			# Tweaks
 			modifier = { factor = 0	solar_system = { has_star_flag = sol_system } }
 			# Galaxy age setting modifier
@@ -240,7 +240,7 @@ gpm_spawn_gas_giant_modifier = {
 			modifier = { factor = 0 has_modifier = "gpm_abandoned_refineries" }
 			# Not on these planets
 			# Never in these systems
-			modifier = { factor = 0	solar_system = { any_system_planet = { is_capital = yes } } }
+			modifier = { factor = 0	solar_system = { is_capital_system = yes } }
 			# Tweaks
 			modifier = { factor = 0	solar_system = { has_star_flag = sol_system } }
 			# Galaxy age setting modifier

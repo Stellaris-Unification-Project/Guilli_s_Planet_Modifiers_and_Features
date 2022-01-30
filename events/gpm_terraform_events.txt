@@ -119,7 +119,7 @@ planet_event = {
 			if = {
 				limit = { 
 					gpm_has_precursor_modifiers = yes
-					NOT = { gpm_has_precursor_feature = yes }
+					gpm_has_precursor_feature = no
 				}
 				gpm_spawn_precursor_features = yes
 			}

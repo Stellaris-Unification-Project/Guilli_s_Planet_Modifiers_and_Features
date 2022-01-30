@@ -408,7 +408,7 @@ gpm_spawn_terraform_modifier = {
 		100 = {
 			add_modifier = { days = -1 modifier = "gpm_ocean_forests" multiplier = gpm_planet_size_multiplier }
 			modifier = { factor = @default }
-			modifier = { factor = 0 NOT = { gpm_is_planet_water = yes } }
+			modifier = { factor = 0 gpm_is_planet_water = no }
 			# TWeaks #
 			# Not with these modifiers #
 			modifier = { factor = 0 has_modifier = "gpm_ocean_forests" }
@@ -456,7 +456,7 @@ gpm_spawn_terraform_modifier = {
 		100 = {
 			add_modifier = { days = -1 modifier = "gpm_extensive_reef_systems" multiplier = gpm_planet_size_multiplier }
 			modifier = { factor = @default }
-			modifier = { factor = 0 NOT = { gpm_is_planet_water = yes } }
+			modifier = { factor = 0 gpm_is_planet_water = no }
 			# TWeaks #
 			# Not with these modifiers #
 			modifier = { factor = 0 has_modifier = "gpm_extensive_reef_systems" }
@@ -464,7 +464,7 @@ gpm_spawn_terraform_modifier = {
 		100 = {
 			add_modifier = { days = -1 modifier = "gpm_ocean_currents" multiplier = gpm_planet_size_multiplier }
 			modifier = { factor = @default }
-			modifier = { factor = 0 NOT = { gpm_is_planet_water = yes } }
+			modifier = { factor = 0 gpm_is_planet_water = no }
 			# TWeaks #
 			# Not with these modifiers #
 			modifier = { factor = 0 has_modifier = "gpm_ocean_currents" }
@@ -472,7 +472,7 @@ gpm_spawn_terraform_modifier = {
 		100 = {
 			add_modifier = { days = -1 modifier = "gpm_ocean_trenches" multiplier = gpm_planet_size_multiplier }
 			modifier = { factor = @default }
-			modifier = { factor = 0 NOT = { gpm_is_planet_water = yes } }
+			modifier = { factor = 0 gpm_is_planet_water = no }
 			# TWeaks #
 			# Not with these modifiers #
 			modifier = { factor = 0 has_modifier = "gpm_ocean_trenches" }
@@ -480,7 +480,7 @@ gpm_spawn_terraform_modifier = {
 		100 = {
 			add_modifier = { days = -1 modifier = "gpm_unique_marine_habitats" multiplier = gpm_planet_size_multiplier }
 			modifier = { factor = @default }
-			modifier = { factor = 0 NOT = { gpm_is_planet_water = yes } }
+			modifier = { factor = 0 gpm_is_planet_water = no }
 			# TWeaks #
 			# Not with these modifiers #
 			modifier = { factor = 0 has_modifier = "gpm_unique_marine_habitats" }
@@ -488,7 +488,7 @@ gpm_spawn_terraform_modifier = {
 		100 = {
 			add_modifier = { days = -1 modifier = "gpm_juggernaut_manta_rays" multiplier = gpm_planet_size_multiplier }
 			modifier = { factor = @default }
-			modifier = { factor = 0 NOT = { gpm_is_planet_water = yes } }
+			modifier = { factor = 0 gpm_is_planet_water = no }
 			# TWeaks #
 			# Not with these modifiers #
 			modifier = { factor = 0 has_modifier = "gpm_juggernaut_manta_rays" }
@@ -581,7 +581,7 @@ gpm_spawn_terraform_modifier = {
 		100 = {
 			add_modifier = { days = -1 modifier = "gpm_dunes" multiplier = gpm_planet_size_multiplier }
 			modifier = { factor = @default }
-			modifier = { factor = 0	NOT = {	gpm_is_planet_dry_hot = yes	} }
+			modifier = { factor = 0	gpm_is_planet_dry_hot = no }
 			# TWeaks #
 			# Not with these modifiers #
 			modifier = { factor = 0 has_modifier = "gpm_dunes" }
@@ -589,7 +589,7 @@ gpm_spawn_terraform_modifier = {
 		100 = {
 			add_modifier = { days = -1 modifier = "gpm_sandstorms" multiplier = gpm_planet_size_multiplier }
 			modifier = { factor = @uncommon }
-			modifier = { factor = 0	NOT = {	gpm_is_planet_dry_hot = yes	} }
+			modifier = { factor = 0	gpm_is_planet_dry_hot = no }
 			# TWeaks #
 			# Not with these modifiers #
 			modifier = { factor = 0 has_modifier = "gpm_sandstorms" }
@@ -597,7 +597,7 @@ gpm_spawn_terraform_modifier = {
 		100 = {
 			add_modifier = { days = -1 modifier = "gpm_sand_tornadoes" multiplier = gpm_planet_size_multiplier }
 			modifier = { factor = @uncommon }
-			modifier = { factor = 0	NOT = {	gpm_is_planet_dry_hot = yes	} }
+			modifier = { factor = 0	gpm_is_planet_dry_hot = no }
 			# TWeaks #
 			# Not with these modifiers #
 			modifier = { factor = 0 has_modifier = "gpm_sand_tornadoes" }
@@ -605,7 +605,7 @@ gpm_spawn_terraform_modifier = {
 		100 = {
 			add_modifier = { days = -1 modifier = "gpm_silicon_crystals" multiplier = gpm_planet_size_multiplier }
 			modifier = { factor = @uncommon }
-			modifier = { factor = 0	NOT = {	gpm_is_planet_dry_hot = yes	} }
+			modifier = { factor = 0	gpm_is_planet_dry_hot = no }
 			# TWeaks #
 			# Not with these modifiers #
 			modifier = { factor = 0 has_modifier = "gpm_silicon_crystals" }

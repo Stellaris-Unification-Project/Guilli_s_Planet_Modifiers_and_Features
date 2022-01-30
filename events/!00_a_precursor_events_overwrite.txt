@@ -232,7 +232,7 @@ ship_event = {
 	trigger = {
 		# owner = { is_ai = no }
 		solar_system = { has_star_flag = precursor_1 }
-		solar_system = { NOT = { is_same_value = root.owner.capital_scope.solar_system } }
+		solar_system = { NOT = { is_same_empire = root.owner.capital_scope.solar_system } }
 		FROM = { 
 			has_anomaly = no 
 			is_star = no
@@ -361,8 +361,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -468,8 +468,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -575,8 +575,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -682,8 +682,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -789,8 +789,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -896,8 +896,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -1003,8 +1003,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -1110,8 +1110,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -1217,8 +1217,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -1266,8 +1266,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -1378,7 +1378,7 @@ ship_event = {
 	
 	trigger = {
 		solar_system = { has_star_flag = precursor_2 }
-		solar_system = { NOT = { is_same_value = root.owner.capital_scope.solar_system } }
+		solar_system = { NOT = { is_same_empire = root.owner.capital_scope.solar_system } }
 		# owner = { is_ai = no }
 		FROM = { 
 			has_anomaly = no 
@@ -1508,8 +1508,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -1615,8 +1615,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -1722,8 +1722,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -1829,8 +1829,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -1936,8 +1936,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -2043,8 +2043,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -2150,8 +2150,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -2257,8 +2257,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -2306,8 +2306,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -2405,7 +2405,7 @@ ship_event = {
 	
 	trigger = {
 		solar_system = { has_star_flag = precursor_3 }
-		solar_system = { NOT = { is_same_value = root.owner.capital_scope.solar_system } }
+		solar_system = { NOT = { is_same_empire = root.owner.capital_scope.solar_system } }
 		# owner = { is_ai = no }
 		FROM = {
 			has_anomaly = no 
@@ -2535,8 +2535,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -2642,8 +2642,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -2749,8 +2749,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -2856,8 +2856,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -2963,8 +2963,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -3071,8 +3071,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -3178,8 +3178,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -3285,8 +3285,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -3392,8 +3392,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -3499,8 +3499,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -3606,8 +3606,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -3713,8 +3713,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -3820,8 +3820,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -3948,7 +3948,7 @@ ship_event = {
 	
 	trigger = {
 		solar_system = { has_star_flag = precursor_4 }
-		solar_system = { NOT = { is_same_value = root.owner.capital_scope.solar_system } }
+		solar_system = { NOT = { is_same_empire = root.owner.capital_scope.solar_system } }
 		# owner = { is_ai = no }
 		FROM = { 
 			has_anomaly = no 
@@ -4078,8 +4078,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -4185,8 +4185,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -4292,8 +4292,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -4399,8 +4399,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -4506,8 +4506,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -4613,8 +4613,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -4720,8 +4720,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -4827,8 +4827,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -4934,8 +4934,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -4983,8 +4983,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -5090,7 +5090,7 @@ ship_event = {
 	
 	trigger = {
 		solar_system = { has_star_flag = precursor_5 }
-		solar_system = { NOT = { is_same_value = root.owner.capital_scope.solar_system } }
+		solar_system = { NOT = { is_same_empire = root.owner.capital_scope.solar_system } }
 		# owner = { is_ai = no }
 		FROM = { 
 			has_anomaly = no 
@@ -5220,8 +5220,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -5328,8 +5328,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -5435,8 +5435,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -5542,8 +5542,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -5649,8 +5649,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -5756,8 +5756,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -5863,8 +5863,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -5970,8 +5970,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -6077,8 +6077,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes
@@ -6184,8 +6184,8 @@ ship_event = {
 		FROMFROM = {
 			if = {
 				limit = {
-					NOT = { exists = archaeological_site }
 					NOR = {
+						exists = archaeological_site
 						gpm_is_planet_class_star = yes
 						gpm_is_planet_class_asteroid = yes
 						gpm_is_planet_class_gas_giant = yes

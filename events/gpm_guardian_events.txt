@@ -22,8 +22,7 @@ planet_event = {
 			solar_system = {
 				set_star_flag = gpm_ego_spawned
 				save_event_target_as = gpm_ego_system
-				random_system_planet = {
-					limit = { is_star = yes }
+				star = {
 					create_country = {
 						name = "NAME_gpm_ego"
 						type = faction
@@ -299,10 +298,8 @@ country_event = {
 					has_civic = civic_fanatic_purifiers
 					has_civic = civic_hive_devouring_swarm
 					has_civic = civic_machine_terminator
-					# has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					# has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
+					# is_xenophobe = yes
+					# is_militarist = yes
 				}
 			}
 		}
@@ -313,10 +310,8 @@ country_event = {
 		trigger = {
 			owner = {
 				OR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
+					is_militarist = yes
+					is_authoritarian = yes
 				}
 			}
 		}
@@ -335,10 +330,7 @@ country_event = {
 	option = {
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
-				}
+				is_spiritualist = yes
 			}
 		}
 		name = gpm_guardian.105.d		# "Oh great and mighty one, we have finally found you!"
@@ -351,10 +343,8 @@ country_event = {
 					has_civic = civic_fanatic_purifiers
 					has_civic = civic_hive_devouring_swarm
 					has_civic = civic_machine_terminator
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
+					is_xenophobe = yes
+					is_militarist = yes
 				}
 			}
 		}
@@ -367,10 +357,8 @@ country_event = {
 				OR = {
 					has_civic = civic_fanatic_purifiers
 					has_civic = civic_hive_devouring_swarm
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
+					is_xenophobe = yes
+					is_authoritarian = yes
 		
 				}
 			}
@@ -385,8 +373,7 @@ country_event = {
 					has_civic = civic_fanatic_purifiers
 					has_civic = civic_hive_devouring_swarm
 					has_civic = civic_machine_terminator
-					# has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
+					# is_xenophobe = yes
 				}
 			}
 		}
@@ -500,10 +487,8 @@ country_event = {
 					has_civic = civic_fanatic_purifiers
 					has_civic = civic_hive_devouring_swarm
 					has_civic = civic_machine_terminator
-					# has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
+					# is_xenophobe = yes
+					is_militarist = yes
 				}
 			}
 		}
@@ -517,10 +502,8 @@ country_event = {
 					has_civic = civic_fanatic_purifiers
 					has_civic = civic_hive_devouring_swarm
 					has_civic = civic_machine_terminator
-					# has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					# has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
+					# is_xenophobe = yes
+					# is_militarist = yes
 					# has_ethic = ethic_materialist
 					# has_ethic = ethic_fanatic_materialist
 				}
@@ -536,10 +519,8 @@ country_event = {
 					has_civic = civic_fanatic_purifiers
 					has_civic = civic_hive_devouring_swarm
 					has_civic = civic_machine_terminator
-					# has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					# has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
+					# is_xenophobe = yes
+					# is_militarist = yes
 					# has_ethic = ethic_materialist
 					# has_ethic = ethic_fanatic_materialist
 					has_ethic = ethic_fanatic_spiritualist
@@ -563,12 +544,9 @@ country_event = {
 		trigger = {
 			owner = {
 				NOR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-					# has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
+					is_xenophile = yes
+					is_pacifist = yes
+					# is_egalitarian = yes
 				}
 			}
 		}
@@ -579,12 +557,9 @@ country_event = {
 		trigger = {
 			owner = {
 				NOR = {
-					# has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
+					# is_xenophile = yes
+					is_pacifist = yes
+					is_egalitarian = yes
 				}
 			}
 		}
@@ -701,7 +676,7 @@ country_event = {
 		}
 		hidden_effect = {
 			#create custom scientist
-			random_country = {
+			random_playable_country = {
 				limit = { is_country_type = default }
 				owner_species = { save_event_target_as = gpm_random_species }
 			}

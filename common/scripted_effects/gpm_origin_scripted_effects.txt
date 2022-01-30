@@ -32,7 +32,7 @@ gpm_run_origin_death_world_planet_gen = {
 			10 = { 
 				add_modifier = { days = -1 modifier = "gpm_giant_worm" multiplier = 1.5 }
 				modifier = { factor = 0 has_modifier = "gpm_giant_worm" }
-				modifier = { factor = 0 NOT = { gpm_is_planet_dry_hot = yes } }
+				modifier = { factor = 0 gpm_is_planet_dry_hot = no }
 			}
 			10 = { 
 				add_modifier = { days = -1 modifier = "gpm_abominable_predators" }
@@ -97,7 +97,7 @@ gpm_run_origin_death_world_planet_gen = {
 			10 = { 
 				add_modifier = { days = -1 modifier = "gpm_sandstorms" }
 				modifier = { factor = 0 has_modifier = "gpm_sandstorms" }
-				modifier = { factor = 0 NOT = {	gpm_is_planet_dry_hot = yes } }
+				modifier = { factor = 0 gpm_is_planet_dry_hot = no }
 			}
 			10 = { 
 				add_modifier = { days = -1 modifier = "gpm_blizzards" }
@@ -116,7 +116,7 @@ gpm_run_origin_death_world_planet_gen = {
 			10 = { 
 				add_modifier = { days = -1 modifier = "gpm_torrential_rainstorms" multiplier = 2 }
 				modifier = { factor = 0 has_modifier = "gpm_torrential_rainstorms" }
-				modifier = { factor = 0 NOT = { gpm_is_planet_wet_hot = yes } }
+				modifier = { factor = 0 gpm_is_planet_wet_hot = no }
 			}
 			10 = { 
 				add_modifier = { days = -1 modifier = "gpm_giant_ocean_snakes" }

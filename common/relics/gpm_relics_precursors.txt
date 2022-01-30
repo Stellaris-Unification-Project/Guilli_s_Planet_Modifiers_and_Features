@@ -76,10 +76,8 @@ gpm_r_encyclopedia_galactica = {
 		hidden_effect = {
 			every_country = {
 				limit = {
-					OR = {
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire
-					}
+					
+						is_fallen_empire = yes
 				}
 				add_opinion_modifier = {
 					who = root

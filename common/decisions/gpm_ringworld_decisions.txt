@@ -323,10 +323,8 @@ decision_gpm_ringworld_badlands = {
 		owner = {
 			OR = {
 				has_authority = auth_corporate
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+				is_authoritarian = yes
+				is_xenophobe = yes
 			}
 		}
 		NOT = { has_modifier = gpm_ringworld_badlands }

@@ -24,10 +24,8 @@ country_event = {
 			}
 		}
 		
-		OR = {
-			is_country_type = fallen_empire
-			is_country_type = awakened_fallen_empire
-		}
+		
+			is_fallen_empire = yes
 	}
 
 	immediate = {
@@ -49,8 +47,7 @@ country_event = {
 			FROM = {
 				OR = {
 					is_country_type = default
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
+					is_fallen_empire = yes
 				}
 				OR = {
 					gpm_has_vanilla_precursor_relic = yes
@@ -61,8 +58,7 @@ country_event = {
 			THIS = {
 				OR = {
 					is_country_type = default
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
+					is_fallen_empire = yes
 				}
 				OR = {
 					gpm_has_vanilla_precursor_relic = yes

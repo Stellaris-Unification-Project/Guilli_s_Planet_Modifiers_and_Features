@@ -56,8 +56,7 @@ planet_event = {
 		if = {
 			limit = {
 				NOR = {
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat # habitats are currently uninfestable
+					is_artificial = yes # habitats are currently uninfestable
 				}
 			}
 			if = {
@@ -103,8 +102,7 @@ planet_event = {
 		if = {
 			limit = {
 				NOR = {
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat # habitats are currently uninfestable
+					is_artificial = yes # habitats are currently uninfestable
 				}
 			}
 			if = {
@@ -153,10 +151,7 @@ planet_event = {
 		log = "---- Bombarded world (unbidden) turn to random world ----"
 		if = {
 			limit = {
-				NOR = {
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat
-				}
+				is_artificial = no
 			}
 			# we also remove wondrous planet modifier and make sure the colour is set to default.
 			if = {

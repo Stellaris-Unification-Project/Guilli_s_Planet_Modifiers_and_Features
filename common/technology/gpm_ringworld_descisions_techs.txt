@@ -382,10 +382,7 @@ gpm_tech_ringworld_simulators = {
 			is_colony = yes
 		}
 		# has_country_flag = built_ringworld
-		NOR = {
-			has_ethic = ethic_fanatic_pacifist
-			has_ethic = ethic_pacifist
-		}
+		is_pacifist = no
 	}
 
 	weight_modifier = {

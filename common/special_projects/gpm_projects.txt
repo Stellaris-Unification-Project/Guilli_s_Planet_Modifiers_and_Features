@@ -1112,7 +1112,7 @@ special_project = {
 			10 = { owner = { set_country_flag = "gpm_discovery_reward_3" } }	#= unique tech 1
 			10 = { owner = { set_country_flag = "gpm_discovery_reward_4" } }	#= unique tech 2
 			10 = {																#= special reward 1			-minor artifacts
-				modifier = { factor = 0 NOT = { has_ancrel = yes } }
+				modifier = { factor = 0 has_ancrel = no }
 				owner = { set_country_flag = "gpm_discovery_reward_5" }
 			}	
 			10 = { owner = { set_country_flag = "gpm_discovery_reward_6" } }	#= special reward 2
@@ -1350,7 +1350,7 @@ special_project = {
 			10 = { owner = { set_country_flag = "gpm_discovery_reward_3" } }	#= unique tech 1
 			10 = { owner = { set_country_flag = "gpm_discovery_reward_4" } }	#= unique tech 2
 			10 = {																#= special reward 1			-minor artifacts
-				modifier = { factor = 0 NOT = { has_ancrel = yes } }
+				modifier = { factor = 0 has_ancrel = no }
 				owner = { set_country_flag = "gpm_discovery_reward_5" }
 			}	
 			10 = { owner = { set_country_flag = "gpm_discovery_reward_6" } }	#= special reward 2

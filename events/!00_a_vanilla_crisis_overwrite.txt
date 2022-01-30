@@ -44,8 +44,7 @@ planet_event = {
 		if = {
 			limit = {
 				NOR = {
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat # habitats are currently uninfestable
+					is_artificial = yes # habitats are currently uninfestable
 					gpm_is_planet_class_habitat = yes
 					gpm_is_planet_class_ringworld = yes
 				}
@@ -96,8 +95,7 @@ planet_event = {
 		if = {
 			limit = {
 				NOR = {
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat # habitats are currently uninfestable
+					is_artificial = yes # habitats are currently uninfestable
 					gpm_is_planet_class_habitat = yes
 					gpm_is_planet_class_ringworld = yes
 				}
@@ -334,7 +332,7 @@ planet_event = {
 		create_ai_fleet = yes
 		create_ai_fleet = yes
 		random_country = { observer_event = { id = observer.45 } }
-		every_country = {
+		every_playable_country = {
 			limit = { is_ai = no }
 			country_event = { id = crisis.2030 }
 		}
@@ -342,15 +340,14 @@ planet_event = {
 			limit = {
 				OR = {
 					is_country_type = default
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
+					is_fallen_empire = yes
 				}
 			}
 			establish_communications_no_message = event_target:AI_crisis
 		}
 		planet_event = { id = crisis.2050 } # Start Fleet reinforcement cycle
 		planet_event = { id = crisis.2052 } # Start Army reinforcement cycle
-		every_country = {
+		every_playable_country = {
 			limit = { has_event_chain = "ai_crisis_chain" }
 			add_event_chain_counter = {
 				event_chain = "ai_crisis_chain"
@@ -418,13 +415,13 @@ planet_event = {
 		create_ai_fleet = yes
 		create_ai_fleet = yes
 		random_country = { observer_event = { id = observer.46 } }
-		every_country = {
+		every_playable_country = {
 			limit = { is_ai = no }
 			country_event = { id = crisis.2031 }
 		}
 		planet_event = { id = crisis.2050 } # Start Fleet reinforcement cycle
 		planet_event = { id = crisis.2052 } # Start Army reinforcement cycle
-		every_country = {
+		every_playable_country = {
 			limit = { has_event_chain = "ai_crisis_chain" }
 			add_event_chain_counter = {
 				event_chain = "ai_crisis_chain"
@@ -487,13 +484,13 @@ planet_event = {
 		create_ai_fleet = yes
 		create_ai_fleet = yes
 		random_playable_country = { observer_event = { id = observer.47 } }
-		every_country = {
+		every_playable_country = {
 			limit = { is_ai = no }
 			country_event = { id = crisis.2032 }
 		}
 		planet_event = { id = crisis.2050 } # Start Fleet reinforcement cycle
 		planet_event = { id = crisis.2052 } # Start Army reinforcement cycle
-		every_country = {
+		every_playable_country = {
 			limit = { has_event_chain = "ai_crisis_chain" }
 			add_event_chain_counter = {
 				event_chain = "ai_crisis_chain"
@@ -555,13 +552,13 @@ planet_event = {
 		create_ai_fleet = yes
 		create_ai_fleet = yes
 		random_country = { observer_event = { id = observer.48 } }
-		every_country = {
+		every_playable_country = {
 			limit = { is_ai = no }
 			country_event = { id = crisis.2033 }
 		}
 		planet_event = { id = crisis.2050 } # Start Fleet reinforcement cycle
 		planet_event = { id = crisis.2052 } # Start Army reinforcement cycle
-		every_country = {
+		every_playable_country = {
 			limit = { has_event_chain = "ai_crisis_chain" }
 			add_event_chain_counter = {
 				event_chain = "ai_crisis_chain"
@@ -618,28 +615,28 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = { has_planet_flag = machine_world_1 }
-			every_country = {
+			every_playable_country = {
 				limit = { has_event_chain = "ai_crisis_chain" }
 				remove_point_of_interest = ai_crisis_poi.1
 			}
 		}
 		if = {
 			limit = { has_planet_flag = machine_world_2 }
-			every_country = {
+			every_playable_country = {
 				limit = { has_event_chain = "ai_crisis_chain" }
 				remove_point_of_interest = ai_crisis_poi.2
 			}
 		}
 		if = {
 			limit = { has_planet_flag = machine_world_3 }
-			every_country = {
+			every_playable_country = {
 				limit = { has_event_chain = "ai_crisis_chain" }
 				remove_point_of_interest = ai_crisis_poi.3
 			}
 		}
 		if = {
 			limit = { has_planet_flag = machine_world_4 }
-			every_country = {
+			every_playable_country = {
 				limit = { has_event_chain = "ai_crisis_chain" }
 				remove_point_of_interest = ai_crisis_poi.4
 			}
@@ -662,7 +659,7 @@ planet_event = {
 			add_deposit = d_energy_3
 		}
 
-		every_country = {
+		every_playable_country = {
 			limit = { has_event_chain = "ai_crisis_chain" }
 			add_event_chain_counter = {
 				event_chain = "ai_crisis_chain"
@@ -720,7 +717,7 @@ planet_event = {
 					}
 				}
 				observer_event = { id = observer.50 }
-				every_country = {
+				every_playable_country = {
 					limit = { is_ai = no }
 					country_event = { id = crisis.2037 }
 				}
@@ -768,12 +765,12 @@ planet_event = {
 					}
 				}
 
-				every_country = {
+				every_playable_country = {
 					limit = { has_special_project = AI_CRISIS_PROJECT }
 					abort_special_project = { type = AI_CRISIS_PROJECT }
 				}
 				observer_event = { id = observer.50 }
-				every_country = {
+				every_playable_country = {
 					limit = { is_ai = no }
 					country_event = { id = crisis.2037 }
 				}
@@ -806,7 +803,7 @@ planet_event = {
 					}
 				}
 				observer_event = { id = observer.50 }
-				every_country = {
+				every_playable_country = {
 					limit = { is_ai = no }
 					country_event = { id = crisis.2037 }
 				}
@@ -909,11 +906,11 @@ planet_event = {
 				remove_modifier = "ship_ghost_signal_1"
 			}
 		}
-		every_country = {
+		every_playable_country = {
 			limit = { has_event_chain = "ai_crisis_chain" }
 			end_event_chain = "ai_crisis_chain"
 		}
-		every_country = {
+		every_playable_country = {
 			limit = { has_special_project = SYNTH_INFILTRATION_PROJECT }
 			abort_special_project = { type = SYNTH_INFILTRATION_PROJECT }
 		}
@@ -926,8 +923,7 @@ planet_event = {
 			limit = {
 				OR = {
 					is_country_type = default
-					is_country_type = fallen_empire
-					is_country_type = awakened_fallen_empire
+					is_fallen_empire = yes
 				}
 			}
 			country_event = { id = crisis.2038 }
