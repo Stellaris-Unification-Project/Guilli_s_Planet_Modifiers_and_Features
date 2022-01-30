@@ -2670,10 +2670,7 @@ planet_event = {
 	trigger = {
 		
 		owner = {
-			NOR = {
-					has_ethic = ethic_fanatic_spiritualist
-					has_ethic = ethic_spiritualist
-}
+			is_spiritualist = no
 		}
 		num_pops > 0
 		

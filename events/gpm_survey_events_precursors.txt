@@ -30,12 +30,8 @@ ship_event = {
 			NOR = {
 				exists = archaeological_site
 				has_planet_flag = gpm_already_rolled_for_prec_dig_site
-			}
-			NOR = {
 				has_planet_flag = gpm_machine_system_moon
 				has_planet_flag = gpm_machine_system_machine_world
-			}
-			NOR = {
 				gpm_is_planet_class_star = yes
 				gpm_is_planet_class_asteroid = yes
 				gpm_is_planet_class_gas_giant = yes
